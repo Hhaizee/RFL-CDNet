@@ -1,7 +1,5 @@
 # **RFL-CDNet: Towards Accurate** Change Detection via Richer Feature Learning
 
-This software implements SDACD: An End-to-end Supervised Domain Adaptation Framework for Cross-domain Change Detection in PyTorch. For more details, please refer to our paper https://arxiv.org/abs/2204.00154
-
 This software implements RFL-CDNet: Towards Accurate Change Detection via Richer Feature Learning in PyTorch. For more details, please refer to our paper 
 
 
