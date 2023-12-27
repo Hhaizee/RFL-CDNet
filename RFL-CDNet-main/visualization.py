@@ -28,7 +28,7 @@ test_loader = get_test_loaders(opt, batch_size=1)
 #test_loader = get_val_loaders(opt, batch_size=1)
 
 model = load_model_test(opt, dev)
-#path = '/project/jhliu4/ch/pp/o1234lstmpw/tmp_best_st/checkpoint_cd_epoch_best_1.pt'   # the path of the model"/project/jhliu4/pp/FC-EF/tmp-pre/checkpoint_cd_epoch_best.pt"
+#path = './tmp/checkpoint_cd_epoch_best.pt'   # the path of the model
 path = '/home/hehaibin/ch/before_RFL-CDNet-main/tmp_whu_best/checkpoint_cd_epoch_best.pt'
 model_weights = torch.load(path, map_location="cpu")
 model_weights = remove_module_prefix(model_weights)
