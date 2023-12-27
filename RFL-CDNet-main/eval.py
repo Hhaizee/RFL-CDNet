@@ -53,7 +53,7 @@ dev = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 test_loader = get_test_loaders(opt, batch_size=1)
 
 model = load_model_test(opt, dev)
-path = '/home/hehaibin/ch/before_RFL-CDNet-main/tmp_whu_best/checkpoint_cd_epoch_best.pt'   # the path of the model"/project/jhliu4/pp/FC-EF/tmp-pre/checkpoint_cd_epoch_best.pt"
+path = './tmp/checkpoint_cd_epoch_best.pt'   # the path of the model
 model_weights = torch.load(path, map_location="cuda")
 model_weights = remove_module_prefix(model_weights)
 model.load_state_dict(model_weights)
