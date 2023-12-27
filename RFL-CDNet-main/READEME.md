@@ -24,7 +24,8 @@ Generate the train.txt, val.txt and test.txt
 python write_path.py
 ```
 
-A demo program can be found in demo. Before running the demo, download our pretrained models and best models from [Baidu Netdisk](https://pan.baidu.com/s/1k_FPHtNttV2mBsJ-M0ukRw?pwd=emby ) (Extraction code: emby) . Then launch demo by:
+A demo program can be found in demo. Before running the demo, download our pretrained models and best models from [Baidu Netdisk](https://pan.baidu.com/s/1k_FPHtNttV2mBsJ-M0ukRw?pwd=emby ) (Extraction code: emby) . Set the path of files in
+tmp/***.pt. Then launch demo by:
 
 ```
 python eval.py
