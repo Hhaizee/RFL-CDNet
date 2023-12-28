@@ -22,7 +22,7 @@
   "weight_dir": "./outputs/",
   "log_dir": "./log/",
   "resume": null,
-  "resume_cd": "/home/hehaibin/ch/before_RFL-CDNet-main/tmp_whu_best/checkpoint_cd_epoch_best.pt",
+  "resume_cd": "./tmp_pre/checkpoint_cd_epoch_best.pt",
   "cuda": false,
   "local_rank": -1,
   "sync_bn": null,
