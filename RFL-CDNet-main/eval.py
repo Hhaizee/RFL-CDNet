@@ -24,10 +24,36 @@ opt = parser.parse_args()
 
 dev = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0,2"
+# if torch.cuda.is_available():
+#     dev = torch.device('cuda')
+#     opt.cuda = True
+# else:
+#     dev = torch.device('cpu')
+#     opt.cuda = False
+#
+# if opt.cuda:
+#     try:
+#         opt.gpu_ids = [int(s) for s in opt.gpu_ids.split(',')]
+#     except ValueError:
+#         raise ValueError('Argument --gpu_ids must be a comma-separated list of integers only')
+#
+# num_gpus = len(opt.gpu_ids)
+# opt.distributed = num_gpus>1
+#
+# if opt.distributed:
+#     torch.cuda.set_device(opt.local_rank)
+#     torch.distributed.init_process_group(
+#         backend="nccl", init_method="env://")
+#     device_ids = opt.gpu_ids
+#     ngpus_per_node = len(device_ids)
+#     opt.batch_size = int(opt.batch_size/ngpus_per_node)
+
+
 test_loader = get_test_loaders(opt, batch_size=1)
 
 model = load_model_test(opt, dev)
-path = './tmp/checkpoint_cd_epoch_best.pt'   # the path of the model
+path = '/project/jhliu4/ch/pp/o1234lstmpw/tmp_xwj_st/checkpoint_cd_epoch_best.pt'   # the path of the model"/project/jhliu4/pp/FC-EF/tmp-pre/checkpoint_cd_epoch_best.pt"
 model_weights = torch.load(path, map_location="cuda")
 model_weights = remove_module_prefix(model_weights)
 model.load_state_dict(model_weights)

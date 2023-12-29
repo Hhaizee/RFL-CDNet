@@ -7,8 +7,8 @@ import numpy as np
 from utils.dataloaders import (full_path_loader, full_path_loader_for_txt, full_test_loader, full_test_loader_for_txt, CDDloader, CDDloader_for_txt)
 from utils.metrics import jaccard_loss, dice_loss
 from utils.losses import hybrid_loss
-from models.Models import Siam_NestedUNet_Conc
-from models.Models import SNUNet_ECAM
+from models.Models_xwj import Siam_NestedUNet_Conc
+from models.Models_xwj import SNUNet_ECAM_XWJ as SNUNet_ECAM
 logging.basicConfig(level=logging.INFO)
 
 def initialize_metrics():
