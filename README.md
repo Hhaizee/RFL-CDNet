@@ -6,7 +6,7 @@ This software implements RFL-CDNet: Towards Accurate Change Detection via Richer
 
 ​    Change Detection is a crucial but extremely challenging task of remote sensing image analysis, and much progress has been made with the rapid development of deep learning. However, most existing deep learning-based change detection methods mainly focus on intricate feature extraction and multi-scale feature fusion, while ignoring the insufficient utilization of features in the intermediate stages, thus resulting in sub-optimal results. To this end, we propose a novel framework, named RFL-CDNet, to utilize richer feature learning for change detection. Specifically, we improve the capability and utilization of feature learning via introducing deep supervision information at the intermediate stages. Furthermore, we design the Coarse-To-Fine Guiding (C2FG) module and the Learnable Fusion (LF) module to further improve feature learning and learn more discriminative feature representations. The C2FG module aims to seamlessly integrate the side output from previous coarse-scale into the current fine-scale prediction in a coarse-to-fine manner, while LF module assumes that the contribution of each stage and each spatial location is independent, thus designing a learnable module to fuse multiple predictions. Experiments on several benchmark datasets show that our proposed RFL-CDNet achieves state-of-the-art performance.
 
-![image-20230828104853096](./image/architecture_of_model.png)
+![image-20230828104853096](./RFL-CDNet-main/image/architecture_of_model.png)
 
 ## Installation
 
@@ -60,7 +60,7 @@ sbatch train.sh
 
 |           (a)           |           (b)           |
 | :---------------------: | :---------------------: |
-| ![CDD](./image/CDD.png) | ![WHU](./image/WHU.png) |
+| ![CDD](./RFL-CDNet-main/image/CDD.png) | ![WHU](./RFL-CDNet-main/image/WHU.png) |
 
 Evaluation of RFL-CDNet on different datasets with SNUNet, STANet, and DASNet as baseline:
 
