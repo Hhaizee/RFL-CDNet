@@ -70,10 +70,10 @@ Evaluation of RFL-CDNet on different datasets with SNUNet, STANet, and DASNet as
 | FC-Siam-diff | 62.51     | 65.24     | 63.85       |
 | FC-Siam-diff | 64.81     | 56.42     | 60.33       |
 | STANet       | 62.75     | 69.47     | 65.94       |
-| DASNet       | 60.58     | 77.00     | 67.81       |
+| DASNet       | 60.58     | **77.00**     | 67.81       |
 | SNUNet       | 68.88     | 72.09     | 70.45       |
-| BIT          | 70.84     | 70.11     | 70.48       |
-| **Ours**     | **70.78** | **74.64** | **72.66**   |
+| BIT          | **70.84**     | 70.11     | 70.48       |
+| **Ours**     | 70.78 | 74.64 | **72.66**   |
 
 ​                                                            **Tabel 1. WHU Cultivated Land Dataset** 
 
@@ -83,10 +83,10 @@ Evaluation of RFL-CDNet on different datasets with SNUNet, STANet, and DASNet as
 | FC-Siam-diff | 54.20     | 81.34     | 65.05       |
 | FC-Siam-diff | 48.84     | 88.96     | 63.06       |
 | STANet       | 77.40     | 90.30     | 83.35       |
-| DASNet       | 83,77     | 91.02     | 87.24       |
+| DASNet       | 83,77     | **91.02**     | 87.24       |
 | SNUNet       | 91.28     | 87.25     | 89.22       |
 | BIT          | 86.64     | 81.48     | 83.98       |
-| **Ours**     | **93.02** | **90.62** | **91.80**   |
+| **Ours**     | **93.02** | 90.62 | **91.80**   |
 
 ​                                                                             **Tabel 2. WHU Dataset** 
 
